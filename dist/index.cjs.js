@@ -1523,6 +1523,7 @@ var TransformContext = /** @class */ (function (_super) {
             var _a = _this.transformState, scale = _a.scale, positionX = _a.positionX, positionY = _a.positionY;
             var transform = getTransformStyles(positionX, positionY, scale);
             _this.contentComponent.style.transform = transform;
+            _this.contentComponent.style.WebkitTransform = transform;
             _this.handleRef();
         };
         _this.handleRef = function () {
