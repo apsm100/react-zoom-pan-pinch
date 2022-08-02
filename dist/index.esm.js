@@ -943,7 +943,7 @@ var cancelTimeout = function (timeout) {
 };
 
 var getTransformStyles = function (x, y, scale) {
-    return "translate3d(" + x + "px, " + y + "px, 0) scale(" + scale + ")";
+    return "translate(" + x + "px, " + y + "px) scale(" + scale + ")";
 };
 var getCenterPosition = function (scale, wrapperComponent, contentComponent) {
     var contentWidth = contentComponent.offsetWidth * scale;
